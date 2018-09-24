@@ -16,6 +16,7 @@
     display: flex;
     align-items: stretch;
     
+    
 }
 
 
@@ -26,7 +27,7 @@
 header {
     width: 100%;
     height: 100px;
-    background: rgb(252, 252, 252);
+    background: yellow;
 
 }
 .icon {
@@ -39,6 +40,7 @@ header {
     background: black;
     color: white;
     padding: 15px;
+    margin: auto;
 }
 .icon i { 
     color: white;
@@ -67,7 +69,26 @@ header ul li a{
 .search-bar {
     display: flex;   
     align-items: center;
+    
 }
+.hamburger-icon {
+    display: none;
+    
+
+}
+@media screen and (max-width: 720px) {
+    .hamburger-icon {
+        display: flex;
+        align-items: center;
+    }
+    header ul {
+       display: none;     
+    }
+    .container{
+        width: 100%;
+    }
+}
+
 
 
 /* ||||||||----------- ** 
@@ -76,9 +97,45 @@ header ul li a{
 
 .hero {
     width: 100%;
-    height: 400px;
-    background: rgb(251, 153, 153);
+    height: 500px;
+    background: linear-gradient(60deg, black, transparent), url('../img/cover-img.jpg');
+    background-size: cover;
+    background-position: 70% 80%;
+    display: flex;
+    
 }
+
+.hero .container {  
+      
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 80px;
+    color: white;   
+}
+.hero p {   
+    margin-top: 0px;
+    width: 60%;
+}
+.hero-input-button{
+    display: flex;
+}
+.hero-input-button input{
+    font-size: 16px;
+    padding: 10px 8px;
+}
+.hero-input-button button{
+    font-size: 16px;
+    padding: 0px 15px;
+    margin: 0px;
+    background: black;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+
 
 /* ||||||||----------- ** 
  Main Section ** ------------------
@@ -87,8 +144,11 @@ header ul li a{
 main {
     width: 100%;
     height: 600px;
-    background: rgb(209, 207, 207);
+    background: rgb(209, 207, 207);   
 }
+
+
+
 
 /* ||||||||----------- **  
 Footer Section ** ------------------
@@ -96,6 +156,22 @@ Footer Section ** ------------------
 
 footer {
     width: 100%;
-    height: 200px;
-    background: rgb(158, 253, 158);
+    padding: 15px 30px;
+    color: rgb(146, 145, 145);    
+    background: black;
+}
+footer h4 {
+    text-transform: uppercase;
+}
+footer ul {
+    padding-left: 10px;    
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li i{
+    margin-bottom: 10px;
+}
+footer ul li span{
+    margin-left: 10px;
 }
