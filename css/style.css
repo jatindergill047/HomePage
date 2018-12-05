@@ -59,6 +59,8 @@ header ul li a{
     text-decoration: none;
     text-transform: uppercase;
 }
+
+
 .search-bar {
     display: flex;   
     align-items: center;
